@@ -1,0 +1,8 @@
+INSERT INTO cinema.film (IDfilm, Titolo, AnnoDiProduzione, Regista) VALUES (6, 'Amarcord', 1973, 'F.Fellini');
+DELETE FROM cinema.film WHERE IDfilm = 11;
+SELECT * FROM cinema.film;
+INSERT INTO cinema.film (IDfilm, Titolo, AnnoDiProduzione, Nazionalità, Genere) VALUES (10, 'District 13', 2000, 'Francia', 'Fantascienza');
+INSERT INTO cinema.film (IDfilm, Titolo, AnnoDiProduzione, Nazionalità, Genere) VALUES (9, 'Paprika', 2006, 'Giappone', 'Fantascienza');
+SELECT * FROM cinema.sale;
+INSERT INTO cinema.sale (Posti, Città) VALUES (50, 'Pisa');
+SELECT * FROM cinema.sale WHERE Posti > 60 AND Città LIKE  'Pisa';
